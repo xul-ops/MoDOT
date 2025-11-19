@@ -1,0 +1,21 @@
+--mode train
+--model_name MoDOT
+--wandb_tags train,nyudmt,modot
+--encoder large07
+--dataset nyudmt
+--batch_size 4
+--num_epochs 50
+--learning_rate 3e-5
+--weight_decay 1e-2
+--adam_eps 1e-3
+--num_threads 8
+--max_depth 10
+--log_directory ./modot_nyudmt/
+--amp
+--loss_type silog
+--ob_loss_type cce
+--ob_loss_weight 5.0
+--boundary_weights 0.1,0.3,0.3,0.5,1.0
+--depth_loss_weight 1.2
+--use_geo_consensus
+--use_step_OBDCL

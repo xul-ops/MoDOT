@@ -1,0 +1,12 @@
+--mode eval
+--model_name MoDOT_SSR
+--encoder large07
+--dataset_eval diode_indoor
+--save_by_iter
+--input_height 768
+--input_width 1024
+--max_depth 350
+--max_depth_eval 350
+--min_depth_eval 0
+--checkpoint_path ./saved_models/ob-hypersim_modot_ssr.pth
+--log_directory ./diode_indoor/vis_test/

@@ -1,0 +1,27 @@
+--mode train
+--model_name MoDOT_SSR
+--wandb_tags train,ssr,hypersim
+--encoder large07
+--dataset hypersim
+--save_by_iter
+--batch_size 8
+--num_epochs 10
+--learning_rate 3e-4
+--weight_decay 1e-2
+--adam_eps 1e-3
+--num_threads 8
+--max_depth 100
+--input_height 1024
+--input_width 768
+--ts_checkpoint_path ./saved_models/ob-hypersim_modot.pth
+--is_two_stage
+--log_directory ./modot_ssr_hypersim/
+--amp
+--loss_type silog
+--ob_loss_type cce
+--ob_loss_weight 1.0
+--boundary_weights 1.3
+--depth_loss_weight 1.2
+--use_geo_consensus
+--use_step_OBDCL
+

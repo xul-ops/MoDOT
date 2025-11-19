@@ -1,0 +1,11 @@
+--mode eval
+--model_name MoDOT
+--encoder large07
+--dataset_eval nyudmt
+--input_height 480
+--input_width 640
+--max_depth 10
+--max_depth_eval 10
+--min_depth_eval 1e-3
+--checkpoint_path modot_nyudmt/MoDOT/ckps/
+--log_directory ./modot_nyudmt/

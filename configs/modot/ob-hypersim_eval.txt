@@ -1,0 +1,13 @@
+--mode eval
+--model_name MoDOT
+--encoder large07
+--dataset hypersim
+--dataset_eval hypersim
+--save_by_iter
+--input_height 1024
+--input_width 768
+--min_depth_eval 0.06
+--max_depth_eval 100
+--max_depth 100
+--checkpoint_path modot_hypersim/MoDOT/ckps/
+--log_directory modot_hypersim/

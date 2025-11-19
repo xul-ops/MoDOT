@@ -1,0 +1,13 @@
+--mode eval
+--model_name MoDOT_SSR
+--encoder large07
+--dataset_eval synocc
+--input_height 1080
+--input_width 1080
+--max_depth 10
+--max_depth_eval 10
+--min_depth_eval 0.0392
+--is_two_stage
+--checkpoint_path model_ssr_synocc/MoDOT_SSR/ckps/
+--log_directory model_ssr_synocc/
+

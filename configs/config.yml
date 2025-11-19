@@ -1,0 +1,102 @@
+# Datasets info
+
+hypersim:
+  dataset_dir: "/home/xuli/researchfiler/occdata/Hypersim/"
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/Hypersim/"
+  train_img_txt: "/home/xuli/researchfiler/occdata/Hypersim/split/hypersim_filtered_train.txt"
+  val_img_txt: "/home/xuli/researchfiler/occdata/Hypersim/split/hypersim_filtered_test.txt"
+  
+nyuocpp:
+  dataset_dir: "/home/xuli/researchfiler/occdata/NYUv2-OCpp/"
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/NYUv2-OCpp/"
+  train_img_txt: "/home/xuli/researchfiler/occdata/NYUv2-OCpp/train.txt"
+  val_img_txt: "/home/xuli/researchfiler/occdata/NYUv2-OCpp/test.txt"
+
+nyud:
+  dataset_dir: ""
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/nyu_depth_v2/official_splits/test/"
+  train_img_txt: ""
+  val_img_txt: "/home/xuli/researchfiler/depthocc/ob_baselines/data_splits/nyudepthv2_test_files_with_gt.txt"
+
+nyudmt:
+  dataset_dir: "/home/xuli/researchfiler/occdata/nyu_depth_v2/"
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/nyu_depth_v2/"
+  train_img_txt: "/home/xuli/researchfiler/occdata/nyu_depth_v2/multi/train_list.txt"
+  val_img_txt: "/home/xuli/researchfiler/occdata/nyu_depth_v2/multi/val_list.txt"
+
+nyudmt_reverse:
+  dataset_dir: "/home/xuli/researchfiler/occdata/nyu_depth_v2/"
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/nyu_depth_v2/"
+  train_img_txt: "/home/xuli/researchfiler/occdata/nyu_depth_v2/multi/val_list.txt"
+  val_img_txt: "/home/xuli/researchfiler/occdata/nyu_depth_v2/multi/train_list.txt"
+
+# OB-FUTURE
+synocc:
+  dataset_dir: "/home/xuli/researchfiler/occdata/synocc/"
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/synocc/"
+  train_img_txt: "/home/xuli/researchfiler/occdata/synocc_split/19186_occ_9p.txt"
+  val_img_txt: "/home/xuli/researchfiler/occdata/synocc_split/19186_occ_1p.txt"
+
+diode:
+  dataset_dir: ""
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/OB-DIODE/"
+  train_img_txt: ""
+  val_img_txt: "/home/xuli/researchfiler/occdata/DIODE/diode_val50.txt"
+
+
+diode_outdoor:
+  dataset_dir: ""
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/DIODE_val/"
+  train_img_txt: ""
+  val_img_txt: "/home/xuli/researchfiler/occdata/DIODE_val/diode_outdoor_eval.txt"
+
+
+diode_indoor:
+  dataset_dir: ""
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/DIODE_val/"
+  train_img_txt: ""
+  val_img_txt: "/home/xuli/researchfiler/occdata/DIODE_val/diode_indoor_eval.txt"
+
+ibims:
+  dataset_dir: ""
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/iBims1_OR/"
+  train_img_txt: ""
+  val_img_txt: "/home/xuli/researchfiler/occdata/iBims1_OR/imagelist.txt"
+
+entityseg:
+  dataset_dir: ""
+  val_dataset_dir: "/home/xuli/researchfiler/occdata/OB-EntitySeg/"
+  train_img_txt: ""
+  val_img_txt: "/home/xuli/researchfiler/occdata/EntitySeg/entityseg_val70.txt"
+
+
+# You can download the weights for HRNet from the repository:
+# https://github.com/HRNet/HRNet-Image-Classification
+PRETRAINED_MODELS:
+  # hrnetv2
+  hrnet18s: "/home/xuli/researchfiler/deocc/pretrained/hrnet_w18_small_model_v2.pth"
+  hrnet18: "/home/xuli/researchfiler/deocc/pretrained/hrnetv2_w18_imagenet_pretrained.pth"
+  hrnet32: "/home/xuli/researchfiler/deocc/pretrained/hrnetv2_w32_imagenet_pretrained.pth"
+  hrnet64: "/home/xuli/researchfiler/deocc/pretrained/hrnetv2_w64_imagenet_pretrained.pth"
+  resnet34: "/home/xuli/researchfiler/deocc/pretrained/resnet34-333f7ec4.pth"
+  # resnet50: "/home/xuli/researchfiler/deocc/pretrained/resnet50s-a75c83cf.pth"
+  # resnet101: "/home/xuli/researchfiler/deocc/pretrained/resnet101s-03a0f310.pth"  
+  resnet50: "/home/xuli/researchfiler/deocc/pretrained/resnet50s-a75c83cf.pth"
+  resnet101: "/home/xuli/researchfiler/deocc/pretrained/resnet101s-03a0f310.pth"  
+  gluon_resnet34: "/home/xuli/researchfiler/deocc/pretrained/gluon_resnet34_v1b-c6d82d59.pth"
+  resnest50: ""    
+  segformer_b3: "/home/xuli/researchfiler/deocc/pretrained/mit_b3.pth"
+  segformer_b0: "/home/xuli/researchfiler/deocc/pretrained/mit_b0.pth"
+  hrformer_base: "/home/xuli/researchfiler/deocc/pretrained/hrt_base.pth"
+  swinformer_small: "/home/xuli/researchfiler/deocc/pretrained/swin_small_patch4_window7_224.pth"  
+  swinformer_base: "/home/xuli/researchfiler/deocc/pretrained/swin_base_patch4_window12_384_22k.pth"
+  swinformer_large: "/home/xuli/researchfiler/deocc/pretrained/swin_large_patch4_window12_384_22k.pth"
+  large07: "/home/xuli/researchfiler/deocc/pretrained/swin_large_patch4_window7_224_22k.pth"
+  small07: "/home/xuli/researchfiler/deocc/pretrained/swin_small_patch4_window7_224.pth"
+  base07: "/home/xuli/researchfiler/deocc/pretrained/swin_base_patch4_window7_224.pth"
+  # base07: "/home/xuli/researchfiler/deocc/pretrained/swin_base_patch4_window7_224_22k.pth"
+  tiny07: "/home/xuli/researchfiler/deocc/pretrained/swin_tiny_patch4_window7_224.pth"
+  plainvit_base: "/home/xuli/researchfiler/deocc/pretrained/mae_pretrain_vit_base.pth"
+  plainvit_large: "/home/xuli/researchfiler/deocc/pretrained/mae_pretrain_vit_large.pth"
+  plainvit_huge: "/home/xuli/researchfiler/deocc/pretrained/mae_pretrain_vit_huge.pth"
+

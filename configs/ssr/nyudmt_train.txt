@@ -1,0 +1,23 @@
+--mode train
+--model_name MoDOT_SSR
+--wandb_tags train,ssr,nyudmt
+--encoder large07
+--dataset nyudmt
+--batch_size 4
+--num_epochs 50
+--learning_rate 3e-3
+--weight_decay 1e-2
+--adam_eps 1e-3
+--num_threads 4
+--max_depth 10
+--ts_checkpoint_path ./saved_models/nyudmt_modot.pth
+--is_two_stage
+--log_directory ./modot_ssr_nyudmt/
+--amp
+--loss_type silog
+--ob_loss_type cce
+--ob_loss_weight 1.0
+--boundary_weights 1.3
+--depth_loss_weight 1.2
+--use_geo_consensus
+--use_step_OBDCL

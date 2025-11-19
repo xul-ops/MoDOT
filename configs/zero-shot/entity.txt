@@ -1,0 +1,12 @@
+--mode eval
+--model_name MoDOT_SSR
+--encoder large07
+--dataset_eval entityseg
+--save_by_iter
+--input_height 768
+--input_width 1024
+--max_depth 10
+--max_depth_eval 10
+--min_depth_eval 1e-3
+--checkpoint_path ./saved_models/ob-hypersim_modot_ssr.pth
+--log_directory ./entity/vis_test/
