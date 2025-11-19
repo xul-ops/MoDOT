@@ -4,10 +4,10 @@ Official implementation of the paper: **Occlusion Boundary and Depth: Mutual Enh
 
 In this work, we are the first to investigate the joint learning of occlusion boundary (OB) estimation and monocular depth estimation. As the two tasks provide complementary cues for understanding 3D scene geometry, our experiments demonstrate that incorporating OB supervision:
 
--improves depth estimation accuracy,
--yields sharper and more consistent boundaries,
--mitigates artifacts caused by high-frequency textures, and
--enhances the overall quality of 3D scene understanding.
+- improves depth estimation accuracy,
+- yields sharper and more consistent boundaries,
+- mitigates artifacts caused by high-frequency textures, and
+- enhances the overall quality of 3D scene understanding.
 
 ------
 
