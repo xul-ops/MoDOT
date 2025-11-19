@@ -82,12 +82,7 @@ Download pre-trained MoDOT checkpoints from the link provided above.
 
 ## Acknowledgments
 
-We thank the following projects for providing code or inspiration:
-
-- [NeWCRFs](https://github.com/aliyun/NeWCRFs)
-- [MTORL](https://github.com/fengpanhe/MT-ORL)
-- [Python Edge NMS](https://github.com/Walstruzz/edge_eval_python?tab=readme-ov-file)
-- and other related works acknowledged in our paper.
+We thank the following projects for providing code or inspiration: [NeWCRFs](https://github.com/aliyun/NeWCRFs), [MTORL](https://github.com/fengpanhe/MT-ORL), [Python Edge NMS](https://github.com/Walstruzz/edge_eval_python?tab=readme-ov-file) and other related works acknowledged in our paper.
 
 ------
 
