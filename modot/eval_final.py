@@ -82,6 +82,7 @@ def eval(model, dataloader_eval, eval_save_path, post_process=False,save_interva
 
             # pred_ob = torch.sigmoid(pred_ob)
             # print("another sigmoid")
+            # Using another sigmoid function here can improve OB-Fscore, yielding better performance than the results reported in the paper
             pred_ob = pred_ob.cpu().numpy().squeeze()
             # print(np.max(pred_ob), np.min(pred_ob))
             gt_ob = ob_gt.cpu().numpy().squeeze()
