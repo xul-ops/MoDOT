@@ -1,6 +1,6 @@
 # MoDOT
 
-Official implementation of the paper: **Occlusion Boundary and Depth: Mutual Enhancement via Multi-Task Learning** (WACV 2026).
+Official implementation of the paper: **Occlusion Boundary and Depth: Mutual Enhancement via Multi-Task Learning** (WACV 2026 Oral).
 
 In this work, we are the first to investigate the joint learning of occlusion boundary (OB) estimation and monocular depth estimation. As the two tasks provide complementary cues for understanding 3D scene geometry, our experiments demonstrate that incorporating OB supervision:
 
