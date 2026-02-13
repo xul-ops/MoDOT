@@ -325,13 +325,13 @@ def main():
         # models_savepath = os.path.join(aux_out_path, 'models')
         command = 'cp newcrfs/wandb_train.py ' + aux_out_path
         os.system(command)
-        command = 'cp newcrfs/initial.py ' + aux_out_path
+        command = 'cp modot/initial.py ' + aux_out_path
         os.system(command)
-        command = 'mkdir -p ' + networks_savepath + ' && cp newcrfs/networks/*.py ' + networks_savepath
+        command = 'mkdir -p ' + networks_savepath + ' && cp modot/networks/*.py ' + networks_savepath
         os.system(command)
-        # command = 'mkdir -p ' + models_savepath + ' && cp newcrfs/models/*.py ' + models_savepath
+        # command = 'mkdir -p ' + models_savepath + ' && cp modot/models/*.py ' + models_savepath
         # os.system(command)
-        command = 'mkdir -p ' + dataloaders_savepath + ' && cp newcrfs/dataloaders/*.py ' + dataloaders_savepath
+        command = 'mkdir -p ' + dataloaders_savepath + ' && cp modot/dataloaders/*.py ' + dataloaders_savepath
         os.system(command)
 
     torch.cuda.empty_cache()
