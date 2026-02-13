@@ -315,7 +315,7 @@ def main_worker(args):
     command = 'cp ' + sys.argv[1] + ' ' + args.log_directory
     os.system(command)
 
-    command = 'cp newcrfs/eval_final.py ' + args.log_directory
+    command = 'cp modot/eval_final.py ' + args.log_directory
     os.system(command)
 
     start_eval_index, end_eval_index, eval_step, save_interval, vis_res = init_eval_saving(args)
