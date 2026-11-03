@@ -1,5 +1,14 @@
 # MoDOT
 
+Official implementation of the paper: **Occlusion Boundary and Depth: Mutual Enhancement via Multi-Task Learning (WACV 2026 Oral)** [link](https://openaccess.thecvf.com/content/WACV2026/html/Xu_Occlusion_Boundary_and_Depth_Mutual_Enhancement_via_Multi-Task_Learning_WACV_2026_paper.html).
+
+In this work, we are the first to investigate the joint learning of occlusion boundary (OB) estimation and monocular depth estimation. As the two tasks provide complementary cues for understanding 3D scene geometry, our experiments demonstrate that incorporating OB supervision:
+
+- improves depth estimation accuracy,
+- yields sharper and more consistent boundaries,
+- mitigates artifacts caused by high-frequency textures, and
+- enhances the overall quality of 3D scene understanding.
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -10,15 +19,6 @@
 - [Pre-trained Checkpoints](#pre-trained-checkpoints)
 - [Extension to Human Face Parsing](#extension-to-human-face-parsing)
 - [Acknowledgments](#acknowledgments)
-
-Official implementation of the paper: **Occlusion Boundary and Depth: Mutual Enhancement via Multi-Task Learning (WACV 2026 Oral)** [link](https://openaccess.thecvf.com/content/WACV2026/html/Xu_Occlusion_Boundary_and_Depth_Mutual_Enhancement_via_Multi-Task_Learning_WACV_2026_paper.html).
-
-In this work, we are the first to investigate the joint learning of occlusion boundary (OB) estimation and monocular depth estimation. As the two tasks provide complementary cues for understanding 3D scene geometry, our experiments demonstrate that incorporating OB supervision:
-
-- improves depth estimation accuracy,
-- yields sharper and more consistent boundaries,
-- mitigates artifacts caused by high-frequency textures, and
-- enhances the overall quality of 3D scene understanding.
 
 ------
 
@@ -112,11 +112,11 @@ Gmail: **xulintaofr@gmail.com**
 If our project is helpful for your research, please consider citing:
 
 ```
-@article{xu_MoDOT,
-  title={Occlusion Boundary and Depth: Mutual Enhancement via Multi-Task Learning},
-  author={Xu, Lintao and Wang, Yinghao and Wang, Chaohui},
-  booktitle = {Proceedings of the Winter Conference on Applications of Computer Vision (WACV)},
-  year      = {2026},
+@InProceedings{xu2026modot,
+    author    = {Xu, Lintao and Wang, Yinghao and Wang, Chaohui},
+    title     = {Occlusion Boundary and Depth: Mutual Enhancement via Multi-Task Learning},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    year      = {2026},
 }
 ```
 
