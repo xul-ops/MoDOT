@@ -1,6 +1,17 @@
 # MoDOT
 
-Official implementation of the paper: **[Occlusion Boundary and Depth: Mutual Enhancement via Multi-Task Learning (WACV 2026 Oral)](https://openaccess.thecvf.com/content/WACV2026/html/Xu_Occlusion_Boundary_and_Depth_Mutual_Enhancement_via_Multi-Task_Learning_WACV_2026_paper.html)**.
+## Table of Contents
+
+- [Overview](#overview)
+- [Dependencies](#dependencies)
+- [Data Preparation](#data-preparation)
+- [Configuration](#configuration)
+- [Training & Inference](#training--inference)
+- [Pre-trained Checkpoints](#pre-trained-checkpoints)
+- [Extension to Human Face Parsing](#extension-to-human-face-parsing)
+- [Acknowledgments](#acknowledgments)
+
+Official implementation of the paper: **Occlusion Boundary and Depth: Mutual Enhancement via Multi-Task Learning (WACV 2026 Oral)** [link](https://openaccess.thecvf.com/content/WACV2026/html/Xu_Occlusion_Boundary_and_Depth_Mutual_Enhancement_via_Multi-Task_Learning_WACV_2026_paper.html).
 
 In this work, we are the first to investigate the joint learning of occlusion boundary (OB) estimation and monocular depth estimation. As the two tasks provide complementary cues for understanding 3D scene geometry, our experiments demonstrate that incorporating OB supervision:
 
@@ -11,7 +22,7 @@ In this work, we are the first to investigate the joint learning of occlusion bo
 
 ------
 
-# Conconet
+## Overview
 
 This repository provides the PyTorch implementation of our proposed **MoDOT** framework, along with all necessary resources:
 
