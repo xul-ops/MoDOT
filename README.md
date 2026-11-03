@@ -82,11 +82,11 @@ Download pre-trained MoDOT checkpoints from the link provided above.
 
 ## Extension to Human Face Parsing
 
-Additional experiments conducted in March 2026 show that **MoDOT can be extended to human face parsing with minimal modifications**. We adapt OBDCL to encourage differences in class-probability vectors across semantic boundaries rather than depth discontinuities, and adapt the prediction branches for parsing and contour estimation while retaining CASM for explicit cross-task feature interaction. SSR is not used in this extension.
+Additional experiments conducted in March 2026 show that **MoDOT can be extended to human face parsing with minimal modifications**. We replace the depth head with a parsing head and the OB branch with SegFace's contour branch. We adapt OBDCL to encourage differences in class-probability vectors across semantic boundaries rather than depth discontinuities, while retaining CASM for explicit cross-task feature interaction. SSR is not used in this extension.
 
 On **CelebAMask-HQ** at **512 × 512** resolution, MoDOT-L achieves **89.88 mean F1 / 82.76 mean IoU**, outperforming [SegFace (Swin-B)](https://github.com/kartik-3004/segface)'s **88.96 / 81.55** with substantially fewer training epochs. Neither method uses data augmentation on this dataset. Notably, MoDOT-L improves the F1 score for the long-tail **Necklace** class from **63.4 to 74.1**, while MoDOT-B improves **Earring** from **75.1 to 76.8**. MoDOT-B also surpasses SegFace overall (**89.81 / 82.64**) using the same Swin-B backbone. On **LaPa** at **512 × 512** resolution, MoDOT-B achieves **92.19 mean F1 / 86.87 mean IoU** without data augmentation, approaching SegFace's **93.03 / 88.14**, obtained with augmentation.
 
-These results highlight MoDOT's **potential to generalize beyond depth estimation to other boundary-aware dense prediction tasks**.
+These results highlight MoDOT's **potential to generalize beyond joint OB and depth estimation to other boundary-aware dense prediction tasks**.
 
 ------
 
